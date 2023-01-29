@@ -9,7 +9,7 @@ RegisterCommand(Config.CommandName, function(source, args, raw)
         elseif jobname == Config.MechanicJobName then
             TriggerServerEvent("tsJobAd:sendMechanicJobAd", args)
         else
-            ESX.ShowNotification("Du kannst keine Mitteilungen versenden!")
+            ESX.ShowNotification("You can't send any jobads!")
         end
     end)
 end)
